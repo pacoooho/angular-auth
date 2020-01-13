@@ -5,7 +5,7 @@ import {AuthService} from '../../services/auth.service';
 
 @Component({
   selector: 'app-private-tasks',
-  templateUrl: './private-tasks.component.html',
+  templateUrl: './private-tasks.component.svg',
   styleUrls: ['./private-tasks.component.css']
 })
 export class PrivateTasksComponent implements OnInit {
