@@ -7,9 +7,9 @@ import {AuthService} from '../../services/auth.service';
   selector: 'app-private-tasks',
   templateUrl: './private-tasks.component.svg',
   styleUrls: ['./private-tasks.component.css']
-})
+})  
 export class PrivateTasksComponent implements OnInit {
-
+  
   constructor(
     private tasksService: TasksService,
      private router: Router,

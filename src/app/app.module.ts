@@ -12,13 +12,15 @@ import { PrivateTasksComponent } from './components/private-tasks/private-tasks.
 
 import {AuthGuard} from './auth.guard';
 import {TokenInterceptorService} from './services/token-interceptor.service';
+import { SvgComponent } from './svg/svg.component';
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     SigninComponent,
     TasksComponent,
-    PrivateTasksComponent
+    PrivateTasksComponent,
+    SvgComponent
   ],
   imports: [
     BrowserModule,  
