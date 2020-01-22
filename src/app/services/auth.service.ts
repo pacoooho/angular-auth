@@ -7,9 +7,9 @@ import {Router} from '@angular/router';
 })
 
 export class AuthService {
-
-private URL = process.env.URL;
  
+private URL = process.env.URL;
+
 constructor(
   private http: HttpClient,
   private router: Router
