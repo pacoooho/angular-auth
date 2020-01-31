@@ -5,11 +5,11 @@
     <div class="row">
         <div class="col-md-5">
             <div class="card">
-                <img *ngIf="type == 'png'; else elseBlock" [src]="'https://api-pac.herokuapp.com/api/' + photo.imagePath"
+                <img *ngIf="type == 'png'; else elseBlock" [src]="'https://api-pac.herokuapp.com/' + photo.imagePath"
                     class="img-card-top w-100">
                 <ng-template #elseBlock>
                     <video #elseBlock loop muted="muted" autoplay class="img-card-top w-100">
-                        <source [src]="'https://api-pac.herokuapp.com/api/' + photo.imagePath" type="video/mp4">
+                        <source [src]="'https://api-pac.herokuapp.com/' + photo.imagePath" type="video/mp4">
                     </video>
                 </ng-template>
             </div>

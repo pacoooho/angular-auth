@@ -4,11 +4,11 @@
             <div class="card-header">
                 {{indice+1}} {{photo.title}} 
             </div>
-            <img *ngIf="types[indice] == 'png'; else elseBlock" [src]="'https://api-pac.herokuapp.com/api/' + photo.imagePath"
+            <img *ngIf="types[indice] == 'png'; else elseBlock" [src]="'https://api-pac.herokuapp.com/' + photo.imagePath"
                 class="img-card-top w-100">
             <ng-template #elseBlock>
                 <video #elseBlock loop muted="muted" autoplay class="img-card-top w-100">
-                    <source [src]="'https://api-pac.herokuapp.com/api/' + photo.imagePath" type="video/mp4">
+                    <source [src]="'https://api-pac.herokuapp.com/' + photo.imagePath" type="video/mp4">
                 </video>
             </ng-template>
             <div class="card-img-overlay" style="color:red">
