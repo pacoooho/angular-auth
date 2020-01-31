@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-4 p-4" *ngFor="let photo  of photos;let indice=index">
+        <div class="card card-photo" (click)="selectedCard(photo._id)">
+            <div class="card-header">
+                {{indice+1}} {{photo.title}} 
+            </div>
+            <img *ngIf="types[indice] == 'png'; else elseBlock" [src]="'https://api-pac.herokuapp.com/api/' + photo.imagePath"
+                class="img-card-top w-100">
+            <ng-template #elseBlock>
+                <video #elseBlock loop muted="muted" autoplay class="img-card-top w-100">
+                    <source [src]="'https://api-pac.herokuapp.com/api/' + photo.imagePath" type="video/mp4">
+                </video>
+            </ng-template>
+            <div class="card-img-overlay" style="color:red">
+                <div class="card-body">
+                    <p>{{photo.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
