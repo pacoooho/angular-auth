@@ -7,7 +7,7 @@ import {Photo} from '../interfaces/Photo'
   providedIn: 'root'
 })
 export class PhotoService {    
-  private URI =  'https://api-pac.herokuapp.com/api'
+  private URI =  'https://api-pac.herokuapp.com/api/photos'
 
  // URI = 'http://localhost:4000/api/photos';
 
